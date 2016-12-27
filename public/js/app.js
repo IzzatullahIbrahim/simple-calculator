@@ -25,11 +25,3 @@ app.config([
             })
     }
 ])
-
-app.controller ('MyApp.CalculatorController',[
-    '$scope',
-
-    function ($scope){
-        console.log('controller is working')
-    }
-])

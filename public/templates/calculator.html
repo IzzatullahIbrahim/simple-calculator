@@ -1,31 +1,31 @@
 <h1>Calculator Page</h1>
 
 <div class="calculator">
-    <div>
-        <input>
+    <div class="row">
+        <input ng-model="display">
     </div>
     <div class="row">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>0</button>
+        <button ng-click="setNumber(1)">1</button>
+        <button ng-click="setNumber(2)">2</button>
+        <button ng-click="setNumber(3)">3</button>
+        <button ng-click="setNumber(0)">0</button>
     </div>
     <div class="row">
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>cl</button>
+        <button ng-click="setNumber(4)">4</button>
+        <button ng-click="setNumber(5)">5</button>
+        <button ng-click="setNumber(6)">6</button>
+        <button ng-click="clearDisplay()">cl</button>
     </div>
     <div class="row">
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>=</button>
+        <button ng-click="setNumber(7)">7</button>
+        <button ng-click="setNumber(8)">8</button>
+        <button ng-click="setNumber(9)">9</button>
+        <button ng-click="calculate()">=</button>
     </div>
     <div class="row">
-        <button>+</button>
-        <button>-</button>
-        <button>x</button>
-        <button>/</button>
+        <button ng-click="setOperator('+')">+</button>
+        <button ng-click="setOperator('-')">-</button>
+        <button ng-click="setOperator('x')">x</button>
+        <button ng-click="setOperator('/')">/</button>
     </div>
 </div>
