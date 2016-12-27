@@ -42,7 +42,17 @@ app.controller ('MyApp.CalculatorController',[
                 var result = 0;
                 if (operationList [1] === '+'){
                     result = parseInt(operationList [0]) + parseInt(operationList [2]);
-
+                } else if (operationList [1] === '-'){
+                    result = parseInt(operationList [0]) - parseInt(operationList [2]);
+                } else if (operationList [1] === 'x'){
+                    result = parseInt(operationList [0]) * parseInt(operationList [2]);
+                } else if (operationList [1] === '/'){
+                    if (parseInt(operationList[2])===0){
+                        $scope.updateDisplay('ERROR')
+                        return;
+                    } else {
+                        result = parseInt(operationList [0]) / parseInt(operationList [2]);
+                    }
                 }
                 $scope.updateDisplay (result);
                 console.log('The result is: ', result);
