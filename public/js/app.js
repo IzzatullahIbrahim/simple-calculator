@@ -20,7 +20,7 @@ app.config([
             })
             .state('calculator',{
             url:'/calculator',
-            templateUrl:'/templates/home.html',
+            templateUrl:'/templates/calculator.html',
             controller:'MyApp.CalculatorController'
             })
     }

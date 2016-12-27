@@ -3,6 +3,31 @@
     <head>
         <meta charset="utf-8">
         <title>Simple Calculator Apps</title>
+
+        <!-- Load Styling-->
+        <link href="/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+        <!-- Load Files -->
+        <link href="/css/style.less" rel="stylesheet" type="text/less">
+
+        <!-- Load Style's Script -->
+        <script src="/lib/jquery/dist/jquery.js"></script>
+        <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+        <!-- Load Less File-->
+        <script>
+            less = {
+                env:"development",
+                async: false,
+                fileAsync:false,
+                poll:1000,
+                functions: {},
+                dumpLineNumbers:"comments",
+                relativeUrls:false,
+                rootpath:":/a.com/"
+            };
+        </script>
+        <script src="/lib/less/dist/less.js"></script>
     </head>
     <body ng-app = "MyApp">
         <nav>
